@@ -41,7 +41,10 @@ a.addEventListener("click", e => {
     // Si se hace click en cancelar, se tiene que borrar el mensaje 
     btn_dos.addEventListener("click", e => {
         console.log('boton cancelar');
+        // oculta p
         document.getElementById('msj').style.display = 'none';
+        // borra el div
+        //document.body.removeChild(div);
     })
 
 })
