@@ -33,7 +33,6 @@ a.addEventListener("click", e => {
     })
 
     // funcion al hacer click en el boton "Cancelar"
-    // se tiene que redirigir al usuario al href del <a>
     btn_dos.addEventListener("click", e => {
         console.log('boton cancelar');
     })
