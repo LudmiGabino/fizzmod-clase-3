@@ -20,6 +20,9 @@ a.addEventListener("click", e => {
     btn_uno.innerText = "Aceptar";
     btn_dos.innerText = "Cancelar";
 
+    // agrego id a elemento p
+    elemento_p.id = "msj";
+
     // agregar los elementos creados
     elemento_div.appendChild(elemento_p);
     elemento_div.appendChild(btn_uno);
@@ -31,13 +34,14 @@ a.addEventListener("click", e => {
     btn_uno.addEventListener("click", e => {
         console.log('boton aceptar');
         window.document.location = a.href;
-
+        // https://developer.mozilla.org/es/docs/Web/API/Window/location
     })
 
     // funcion al hacer click en el boton "Cancelar"
     // Si se hace click en cancelar, se tiene que borrar el mensaje 
     btn_dos.addEventListener("click", e => {
         console.log('boton cancelar');
+        document.getElementById('msj').style.display = 'none';
     })
 
 })
